@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #44ffac; /* Fondo verde claro */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Centrar verticalmente en la página */
+}
+
+#app {
+  background-color: #44ffac; /* Fondo verde claro */
+  width: 400px; /* Menos ancho */
+  height: 500px; /* Más alto */
+  margin: 20px auto; /* Margen superior más sutil */
+  border: 2px solid #fff; /* Borde blanco */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Alineación vertical */
+  justify-content: center; /* Alineación horizontal */
+  align-items: center; /* Alineación horizontal */
+}
+
+#time {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#time #value {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-direction: column; /* Alineación vertical */
+  align-items: center; /* Alineación horizontal */
+  
+  margin-top: 20px;
+}
+
+#form {
+  display: flex;
+  flex-direction: row; /* Alineación vertical */
+  align-items: center; /* Alineación horizontal */
+  
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  outline: none;
+
+}
+
+input[type="submit"] {
+  border: none;
+  background-color: #ff6b6b; /* Rojo claro */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #e95a5a; /* Rojo más oscuro al pasar el mouse */
+}
+
+#tasks {
+  display: flex;
+  flex-direction: column; /* Alineación vertical */
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.task {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.task .completed {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.done {
+  display: inline-block;
+  padding: 5px;
+  background-color: #dcdcdc; /* Gris claro */
+  border-radius: 3px;
+  font-weight: bold;
+  color: #333;
+}
