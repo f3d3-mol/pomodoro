@@ -1,27 +1,27 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #44ffac; /* Fondo verde claro */
+  background-color: #44ffac;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Centrar verticalmente en la página */
+  min-height: 100vh;
 }
 
 #app {
-  background-color: #44ffac; /* Fondo verde claro */
-  width: 400px; /* Menos ancho */
-  height: 500px; /* Más alto */
-  margin: 20px auto; /* Margen superior más sutil */
-  border: 2px solid #fff; /* Borde blanco */
+  background-color: #44ffac;
+  width: 400px;
+  height: 500px;
+  margin: 20px auto;
+  border: 2px solid #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column; /* Alineación vertical */
-  justify-content: center; /* Alineación horizontal */
-  align-items: center; /* Alineación horizontal */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #time {
@@ -37,20 +37,18 @@ body {
 
 .form {
   display: flex;
-  flex-direction: column; /* Alineación vertical */
-  align-items: center; /* Alineación horizontal */
-  
+  flex-direction: row; /* Cambia a fila para alinear elementos en línea */
+  align-items: center;
   margin-top: 20px;
 }
 
 #form {
-  display: flex;
-  flex-direction: row; /* Alineación vertical */
-  align-items: center; /* Alineación horizontal */
-  
+  display:flex; /* Alinea elementos en línea */
+  align-items: center;
 }
 
-input[type="text"] {
+/* Estilos para los elementos de entrada en el formulario */
+#itTask {
   padding: 10px;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
@@ -58,45 +56,55 @@ input[type="text"] {
 
 }
 
-input[type="submit"] {
+#bAdd {
   border: none;
-  background-color: #ff6b6b; /* Rojo claro */
+  background-color: #ff6b6b;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+
+  margin-left: 10px; /* Separación entre el botón "Agregar tarea" y el campo de entrada */
 }
 
-input[type="submit"]:hover {
-  background-color: #e95a5a; /* Rojo más oscuro al pasar el mouse */
+#bAdd:hover {
+  background-color: #e95a5a;
 }
 
 #tasks {
   display: flex;
-  flex-direction: column; /* Alineación vertical */
+  flex-direction: column;
   gap: 10px;
   margin-top: 20px;
 }
 
-.task {
+/* Establece un ancho fijo y adapta al contenido */
+tr.tabla {
   display: flex;
-  gap: 10px;
-  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
-.task .completed {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
+/* Establece un ancho igual para todas las celdas de la fila */
+tr.tabla td {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
 }
 
-.done {
-  display: inline-block;
-  padding: 5px;
-  background-color: #dcdcdc; /* Gris claro */
+/* Estilos para los botones en las filas de la tabla */
+.table-button {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
   border-radius: 3px;
-  font-weight: bold;
-  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
+
+.table-button:hover {
+  background-color: #e95a5a;
+}
+
