@@ -94,7 +94,7 @@ tr.tabla td {
 }
 
 /* Estilos para los botones en las filas de la tabla */
-.table-button {
+.table-button, .table-button_modify {
   background-color: #ff6b6b;
   color: #fff;
   border: none;
