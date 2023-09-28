@@ -1,3 +1,6 @@
+
+
+
 // Esperar a que el DOM esté completamente cargado antes de ejecutar el código
 document.addEventListener("DOMContentLoaded", function () {
   // Declaración de variables
@@ -32,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
       complete: false,
     };
 
-    tasks.unshift(newTask);
+    tasks.push(newTask);
     idTask++;
   }
 
