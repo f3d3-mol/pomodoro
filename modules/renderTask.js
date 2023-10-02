@@ -1,5 +1,5 @@
     // Función para renderizar las tareas en la tabla
-    function renderTask() {
+    export function renderTask(tasks,tBody,startButtonHandler,timer) {
         // Borra los elementos existentes en el tBody
         tBody.innerHTML = '';
     
@@ -37,6 +37,9 @@
               console.log(startId);
               btnStart.textContent = 'in progress';
               startButtonHandler(startId);
+            }
+            else if (timer == 0) {
+                
             }
           };
     
