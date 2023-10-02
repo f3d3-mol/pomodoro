@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Función para manejar el botón "Start" de una tarea
   function startButtonHandler(id) {
-    time = 25 * 60; // 25 minutos en segundos
+    time = 25*60; // 25 minutos en segundos
     current = id;
 
     timer = setInterval(() => {
@@ -42,6 +42,9 @@ document.addEventListener("DOMContentLoaded", function () {
   function timeHandler(id) {
     time--;
     renderTime();
+    if (time ==0){
+        clearInterval(timer);
+    }
   }
 
   // Función para renderizar el tiempo restante en el DOM
@@ -52,6 +55,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const seconds = parseInt(time % 60);
 
     timeDiv.textContent = `${minutes}:${seconds}`;
+
+
+
   }
-  console.log(`id task ${idTask}`);
 });
